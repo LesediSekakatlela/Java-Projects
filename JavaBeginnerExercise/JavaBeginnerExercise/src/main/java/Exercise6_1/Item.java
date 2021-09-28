@@ -9,7 +9,8 @@ package Exercise6_1;
  *
  * @author admin
  */
-public class item {
+public class Item {
+
     public int itemID;
     public String desc;
     public double price;
