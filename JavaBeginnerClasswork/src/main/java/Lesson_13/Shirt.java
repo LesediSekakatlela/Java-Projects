@@ -10,7 +10,7 @@ package Lesson_13;
  *
  * @author admin
  */
-public class Shirt extends Clothing  {
+public class Shirt extends Clothing  implements Returnable{
 
     private char fit = 'U';
     private String sleeve;
@@ -21,11 +21,14 @@ public class Shirt extends Clothing  {
         this.sleeve = sleeve;
     }
 
-    public void display() {
+    @Override
+      public void display() {
         super.display();
         System.out.println("fit: " + getFit());
         System.out.println("sleeve: " + getSleeve());
     }
+
+  
 
     public char getFit() {
         return fit;
@@ -42,4 +45,10 @@ public class Shirt extends Clothing  {
     public void setSleeve(String sleeve) {
         this.sleeve = sleeve;
     }
+
+    @Override
+    public String doReturn(){
+        return "This item";
+    }
+    
 }

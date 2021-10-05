@@ -73,5 +73,7 @@ public class Employees {
         this.identityNum = identityNum;
     }
 
-    
+    public String toString() {
+        return "\nCollegue " + 1 + ";" + "\nName: " + getName() + "\nSurname: " + getSurname() + "\nAge: " + getAge() + "\nGender: " + getGender();
+    }
 }

@@ -61,6 +61,7 @@ public class Clothing {
         this.price = price;
     }
     
+    @Override
     public String toString() {
         return "\nThis shirt is a " + desc + ";" + "\nPrice: " + getPrice() + "\nColor: " + getColorCode();
     }

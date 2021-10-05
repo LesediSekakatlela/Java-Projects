@@ -10,23 +10,24 @@ package EmployeesExercise;
  * @author admin
  */
 public class Finance extends Employees {
-    private int salary;
+    private String stockControl;
 
-    public Finance(String name, String surname, int age, char gender, int identityNum, int salary) {
+    public Finance(String name, String surname, int age, char gender, int identityNum, String stockControl) {
         super(name, surname, age, gender, identityNum);
-        this.salary = salary;
+        this.stockControl = stockControl;
     }
     
+    @Override
     public void display() {
         super.display();
-        System.out.println("salary: " + getSalary());
+        System.out.println("stockControl: " + getStockControl());
     }
 
-    public int getSalary() {
-        return salary;
+    public String getStockControl() {
+        return stockControl;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
+    public void setStockControl(String stockControl) {
+        this.stockControl = stockControl;
     }
 }

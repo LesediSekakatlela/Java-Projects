@@ -10,34 +10,37 @@ package EmployeesExercise;
  * @author admin
  */
 public class HR extends Employees{
-    private char position;
-    private int numWorkers;
+    private String position;
+    private int salary;
 
-    public HR(String name, String surname, int age, char gender, int identityNum, char position, int numWorkers) {
+    public HR(String name, String surname, int age, char gender, int identityNum, String position, int salary) {
         super(name, surname, age, gender, identityNum);
         this.position = position;
-        this.numWorkers = numWorkers;
+        this.salary = salary;
     }
 
+    @Override
     public void display() {
         super.display();
         System.out.println("position: " + getPosition());
-        System.out.println("numWorkers: " + getNumWorkers());
+        System.out.println("salary: " + getSalary());
     }
 
-    public char getPosition() {
+    public String getPosition() {
         return position;
     }
 
-    public void setPosition(char position) {
+    public void setPosition(String position) {
         this.position = position;
     }
 
-    public int getNumWorkers() {
-        return numWorkers;
+    public int getSalary() {
+        return salary;
     }
 
-    public void setNumWorkers(int numWorkers) {
-        this.numWorkers = numWorkers;
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
+
+    
 }
